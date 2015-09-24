@@ -1159,6 +1159,12 @@ ZEXTERN uLong ZEXPORT zlibCompileFlags OF((void));
 
 ZEXTERN int ZEXPORT compress OF((Bytef *dest,   uLongf *destLen,
                                  const Bytef *source, uLong sourceLen));
+
+/* Same as above but does not add the header or adler32 checksum
+*/
+ZEXTERN int ZEXPORT compressBare OF((Bytef *dest, uLongf *destLen,
+                                     const Bytef *source, uLong sourceLen));
+
 /*
      Compresses the source buffer into the destination buffer.  sourceLen is
    the byte length of the source buffer.  Upon entry, destLen is the total size
@@ -1174,6 +1180,15 @@ ZEXTERN int ZEXPORT compress OF((Bytef *dest,   uLongf *destLen,
 ZEXTERN int ZEXPORT compress2 OF((Bytef *dest,   uLongf *destLen,
                                   const Bytef *source, uLong sourceLen,
                                   int level));
+
+
+/* Same as above but does not add the header or adler32 checksum
+*/
+ZEXTERN int ZEXPORT compress2Bare OF((Bytef *dest, uLongf *destLen,
+                                      const Bytef *source, uLong sourceLen, 
+                                      int level));
+
+
 /*
      Compresses the source buffer into the destination buffer.  The level
    parameter has the same meaning as in deflateInit.  sourceLen is the byte

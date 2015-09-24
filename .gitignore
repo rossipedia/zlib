@@ -41,6 +41,8 @@
 /contrib/vstudio/**/*.tlog
 /contrib/vstudio/**/*.log
 /contrib/vstudio/**/*.idb
+/contrib/vstudio/**/*.ipdb
+/contrib/vstudio/**/*.iobj
 /contrib/vstudio/**/*.sdf
 /contrib/vstudio/**/*.opensdf
 /contrib/vstudio/**/Tmp/*

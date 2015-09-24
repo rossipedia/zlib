@@ -1,7 +1,7 @@
 LIBRARY
 ; zlib data compression and ZIP file I/O library
 
-VERSION		1.2.8
+VERSION 1.3
 
 EXPORTS
         adler32                                  @1
@@ -141,3 +141,8 @@ EXPORTS
 ; zlib1 v1.2.8 added:
         inflateGetDictionary                    @166
         gzvprintf                               @167
+
+; zlib1 v.1.3.0 added:
+        compressBare                            @168
+        compress2Bare                           @169
+        uncompressBare                          @170
