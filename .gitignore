@@ -26,3 +26,21 @@
 
 
 *.user
+*.cache
+/contrib/**/*.obj
+/contrib/**/*.lst
+/contrib/**/*.suo
+/contrib/vstudio/**/*.dll
+/contrib/vstudio/**/*.exe
+/contrib/vstudio/**/*.ilk
+/contrib/vstudio/**/*.map
+/contrib/vstudio/**/*.res
+/contrib/vstudio/**/*.pdb
+/contrib/vstudio/**/*.lib
+/contrib/vstudio/**/*.exp
+/contrib/vstudio/**/*.tlog
+/contrib/vstudio/**/*.log
+/contrib/vstudio/**/*.idb
+/contrib/vstudio/**/*.sdf
+/contrib/vstudio/**/*.opensdf
+/contrib/vstudio/**/Tmp/*
